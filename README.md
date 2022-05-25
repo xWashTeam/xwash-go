@@ -1,12 +1,12 @@
 # xwash-go
-xWash应用的golang后端
+golang编写的xWash后端
 
-# api
-url: `/api/:building`  
-params:   
+# Api
+Url: `/api/:building`  
+Params:   
   - `building`: 对应的宿舍楼，例如`d19`, `xi1`, `xi2`  
 
-return example:  
+ReturnExample:  
 ```json
 {
   "data": {
@@ -124,7 +124,7 @@ return example:
 }
 ```
 
-# 洗衣机api
+# 洗衣机Api
 
 目前支持的洗衣机品牌/厂商：
 - U净网页版(UClean)
@@ -138,4 +138,6 @@ return example:
 
 > 苏打校园目前(2022-05-25)似乎已经不在SCNU里面了
 
-
+# TODO
+- [ ] 自动更新身份凭证(Token, Cookie)
+- [ ] 错误捕获
