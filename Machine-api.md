@@ -114,10 +114,10 @@ ExampleReturns:
 ```
 
 ReturnsValue:
- - [0].status: `Int`
+- [0].status: `Int`
   - 说明：是否空闲
   - 取值: `0: 空闲`, `1: 使用中`, `其他: 未知`
- - [0].remainTime: `Int` 
+- [0].remainTime: `Int` 
   - 说明：剩余时间
   - 取值说明：只有在状态为使用中时剩余时间才是有效值
 
@@ -142,19 +142,19 @@ Method: `GET`
 Url: `http://view.mplink.cn/ajax/GetDeviceStatus.ashx`  
 Params:
   deviceId: `Int`
-    - 说明：id在洗衣机二维码链接中可以获取到
+  - 说明：id在洗衣机二维码链接中可以获取到
 
 ExampleUrl: `http://view.mplink.cn/ajax/GetDeviceStatus.ashx?deviceID=ea85348b-6dce-49e0-bd05-8a628e0089f6`
 
 ReturnsValue:
-  Value: `Int`
-    - 说明：机器状态
-    - 取值：
-      - 1：空闲
-      - 0：被占用
-      - 4：套餐缺货
-      - 99：设备未就绪
-      - 100：设备正在运行
+- Value: `Int`
+  - 说明：机器状态
+  - 取值：
+    - 1：空闲
+    - 0：被占用
+    - 4：套餐缺货
+    - 99：设备未就绪
+    - 100：设备正在运行
 
 
 ## Washpayer
