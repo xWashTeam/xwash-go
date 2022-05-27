@@ -1,10 +1,10 @@
 package main
 
 import (
+  // "fmt"
   "github.com/gin-gonic/gin"
   "net/http"
-  "example/xwash-go/util"
-  // "fmt"
+  "xwash/go/util"
 )
 
 func main() {
@@ -18,4 +18,14 @@ func main() {
     })
   })
   r.Run()
+
+  // machine := util.Machine{
+  //   "d19_E_1.5",
+  //   "d19",
+  //   "uClean",
+  //   "东十九东边1.5楼",
+  //   "https://q.ujing.com.cn/ucqrc/index.html?cd=0000000000000A0007555202104170176799",
+  // }
+  // qr := util.Check(machine)
+  // fmt.Println(qr)
 }
